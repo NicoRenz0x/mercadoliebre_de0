@@ -8,19 +8,17 @@
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     <header>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/css/header.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         <img src='./images/logo-mercado-liebre.svg' alt='logo'>
-        <div class="burger-menu">
-            <i class="fas fa-bars"></i>
-        </div>
 
         <section class="browse-bar"><p>Lugar para poner barra de búsqueda</p></section>
-        <p>Comprá en cuotas y sin tarjeta de crédito</p>
+        <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
 
         <ul>
             <li><a href='#'>Ofertas</a></li>
@@ -30,10 +28,14 @@
         </ul>
 
         <ul>
-            <li><a href='#'>Creá tu cuenta</a></li>
-            <li><a href='#'>Ingresá</a></li>
-            <li><a href='#'>Mis compras</a></li>
+            <li><a href='#'>Creá tu cuenta<i class="far fa-id-card"></i></a></li>
+            <li><a href='#'>Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
+            <li><a href='#'>Mis compras<i class="fas fa-shopping-basket"></i></a></li>
         </ul>
+
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
 
     <main>
@@ -41,25 +43,25 @@
             <b><h3>Basado en tu última visita</h3></b>
             <div>
                 <img src='./images/img-cafetera-moulinex.jpg' alt='imagen cafetera'>
-                <p>$6.770</p>
+                <p class="price">$6.770</p>
                 <p>40% OFF</p>
                 <b><p>Cafetera Moulinex</p></b>
             </div>
             <div>
                 <img src='./images/img-macbook-pro-2019.jpg' alt='imagen macbook'>
-                <p>$230.000</p>
+                <p class="price">$230.000</p>
                 <p>20% off</p>
                 <b><p>MacBook Pro 2019</p></b>
             </div>
             <div>
                 <img src='./images/img-samsung-galaxy-s10.jpg' alt='imagen samsung galaxy'>
-                <p>$70.500</p>
+                <p class="price">$70.500</p>
                 <p>10% off</p>
                 <b><p>Samsung Galaxy S10</p></b>           
             </div>
             <div>
                 <img src='./images/img-tv-samsung-smart.jpg' alt='imagen smarttv'>
-                <p>$23.200</p>
+                <p class="price">$23.200</p>
                 <p>5% off</p>
                 <b><p>SmartTv Samsung 43"</p></b>                
             </div>
@@ -69,25 +71,25 @@
             <b><h3>Ofertas</h3></b>
             <div>
                 <img src='./images/img-cafetera-moulinex.jpg' alt='imagen cafetera'>
-                <p>$6.770</p>
+                <p class="price">$6.770</p>
                 <p>40% OFF</p>
                 <b><p>Cafetera Moulinex</p></b>
             </div>
             <div>
                 <img src='./images/img-macbook-pro-2019.jpg' alt='imagen macbook'>
-                <p>$230.000</p>
+                <p class="price">$230.000</p>
                 <p>20% off</p>
                 <b><p>MacBook Pro 2019</p></b>
             </div>
             <div>
                 <img src='./images/img-samsung-galaxy-s10.jpg' alt='imagen samsung galaxy'>
-                <p>$70.500</p>
+                <p class="price">$70.500</p>
                 <p>10% off</p>
                 <b><p>Samsung Galaxy S10</p></b>           
             </div>
             <div>
                 <img src='./images/img-tv-samsung-smart.jpg' alt='imagen smarttv'>
-                <p>$23.200</p>
+                <p class="price">$23.200</p>
                 <p>5% off</p>
                 <b><p>SmartTv Samsung 43"</p></b>                
             </div>
@@ -96,14 +98,18 @@
     </main>
 
     <footer>
+        <i class="fas fa-credit-card"></i>
         <b>Pagá con tarjeta o en efectivo</b>
         <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
-
+        
+        <i class="fas fa-gift"></i>
         <b>Envío gratis desde $2500</b>
         <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
 
+        <i class="fas fa-user-shield"></i>
         <b>Seguridad, de principio a fin</b>
         <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+
 
         <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
 

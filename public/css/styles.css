@@ -1,8 +1,36 @@
 body{
-    background-color: #EAC926;;
+    background-color: #EAC926;
 }
 
+h3{
+    font-size: 24px;
+}
 
-.burger-menu{
-    background-color: #03264C;
+.price{
+    font-size: 18px
+}
+
+main section div p{
+    font-size: 16px;
+}
+
+img{
+    max-width: 100vw;
+}
+
+footer{
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    align-content: center;
+    text-align: center;
+    padding: 5%;
+}
+
+footer i{
+    size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3; 
 }

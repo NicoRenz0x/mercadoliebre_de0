@@ -1,0 +1,25 @@
+header{
+    background-color: #EAC926;
+    display: flex;
+    height: 20vh;
+    width: 100vw;
+    align-items: center;
+    justify-self: center;
+    align-content: center;
+    padding: 5%;
+}
+
+.burger-menu{
+    width: 15vw;
+    background-color: #03264C;
+    align-content: center;
+    justify-self: center;
+    align-items: center;
+    font-size: 3em;
+
+}
+
+p{
+    font-size: 12px;
+}
+
