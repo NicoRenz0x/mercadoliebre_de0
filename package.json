@@ -15,8 +15,13 @@
     "url": "https://github.com/NicoRenz0x/mercadoliebre_de0/issues"
   },
   "homepage": "https://github.com/NicoRenz0x/mercadoliebre_de0#readme",
-  "description": "",
   "dependencies": {
-    "node": "^16.6.1"
-  }
+    "express": "^4.17.1",
+    "node": "^16.6.1",
+    "nodemon": "^2.0.12",
+    "normalize.css": "^8.0.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "description": ""
 }
