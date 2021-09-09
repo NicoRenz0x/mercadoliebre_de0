@@ -1,8 +1,9 @@
 header{
     background-color: #EAC926;
     display: flex;
+    flex-direction: column;
     height: 20vh;
-    width: 100vw;
+    width: 100%;
     align-items: center;
     justify-self: center;
     align-content: center;
@@ -23,3 +24,6 @@ p{
     font-size: 12px;
 }
 
+img{
+    width: 40vw;
+}
