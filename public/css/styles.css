@@ -2,6 +2,14 @@ body{
     background-color: #f3e496;
 }
 
+main {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 h3{
     font-size: 24px;
 }
@@ -30,8 +38,28 @@ footer{
     padding: 5%;
 }
 
+.footermain{
+    display:flex;
+    flex-direction: column;
+    padding: 0 15% 0 15%;
+}
+
 footer i{
-    size: 2em;
+    font-size: 200%;
     margin-bottom: 10px;
+    margin-top: 20px;
     color: #1259c3; 
+}
+
+.copyright{
+    align-self: flex-start;
+    justify-self: end;
+}
+
+#banner{
+    width: 100vw;
+}
+
+.producto{
+    background-color: white;
 }

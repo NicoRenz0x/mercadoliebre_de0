@@ -2,23 +2,38 @@ header{
     background-color: #EAC926;
     display: flex;
     flex-direction: column;
-    height: 20vh;
     width: 100%;
     align-items: center;
     justify-self: center;
     align-content: center;
-    padding: 5%;
+    padding-bottom: 5%;
+}
+
+.browse-bar{
+    width: 70%;
+    margin-left: 20%;
+    padding-top: 1%;
 }
 
 .burger-menu{
+    display: inline-block;
     width: 15vw;
-    background-color: #03264C;
-    align-content: center;
-    justify-self: center;
-    align-items: center;
-    font-size: 3em;
-
+    height: 16vw;
+    color: white;
+    background-color: #001ec5;
+    font-size: 250%;
+    border-radius: 7px;
+    text-align: center;
+    justify-items: center;
 }
+#bars{
+    margin-top: 20%;
+}
+
+ul i{
+    padding-left: 2px;
+}
+
 
 p{
     font-size: 12px;
@@ -27,3 +42,6 @@ p{
 img{
     width: 40vw;
 }
+
+
+
