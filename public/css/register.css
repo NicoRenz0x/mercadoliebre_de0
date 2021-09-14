@@ -1,59 +1,88 @@
 * {
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
   
 body {
     background-color: #ebebeb;
+    box-sizing: border-box;
 }
-  
+
 main {
-    width: 90%;
-    margin: auto;
-}
-  
-.formulario {
     display: flex;
+    width: 90vw;
+    box-sizing: border-box;
+    padding: 0 5% 0 5%;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-registro {
+    display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     margin: 5%;
 }
-.titulo {
+.formulario-registro .titulo{
     font-weight: bolder;
-    font-size: 16px;
-    text-align: start;
+    margin: 2%;
+    height: 2vh;
 }
-.camp {
-    background-color: white;
-    padding: 1.5%;
-    border: 1px solid white;
-    border-radius: 5px;
+
+.campo {
+    padding: 2%;
+    border: 1px solid #fff;
+    border-radius: 10px;
 }
-.camp:hover {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+.fecha{
+    width: 45vw;
 }
-.perfilUsuario {
+
+.intereses {
+    margin-left: 4%;
+    margin-bottom: 2%;
+}
+
+.firstcontent{
+    margin-top: -2%;
+}
+
+.intereses input{
+    margin-right: 1vw;
+}
+.perfilUsuario-opciones{
     display: flex;
     justify-content: space-around;
-    flex-wrap: nowrap;
 }
-  
-.perfilUsuario input {
-    margin-right: 15px;
+
+#fotoperfil{
+    margin-top: 1.5vh;
 }
-.intereses {
-    display: flex;
-    flex-direction: column;
-    margin-left: 5%;
-}
-.intereses input {
-    margin-right: 5%;
+
+.botones{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2%;
 }
 .boton {
-    padding: 1%;
+    margin-top: 2%;
     background-color: #1259c3;
-    color: white;
-    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
     border: none;
+    justify-content: center;
+    padding: 4%;
+    box-sizing: border-box;
+    align-self: center;
 }
-  
+.borrar{
+    background-color: rgb(165, 24, 24);
+}
+.boton:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
