@@ -13,6 +13,12 @@ header{
         box-sizing: content-box;
         max-height: max-content;
     }
+    header p{
+        font-size: 12px;
+    }
+    header img{
+        width: 40vw;
+    }
     #banner{
         width: 100vw;
     }
@@ -67,27 +73,50 @@ header{
     }
 
     .burger-menu:hover .burger-menu-items{
-        display:flow-root;
-        z-index: 1;
+        display: block;
+        z-index: 2;
         background-color:#1259c37e
+    }
+    .burger-menu:hover #bars{
+        padding-bottom: 30%;
     }
 
     .burger-menu{
+        display:flex;
+        flex-direction: column;
         text-align: center;
         justify-items: center;
         padding: 2% 5% 2% 5%;
         margin: auto;
-        padding: 2%;
-        border-radius: 20px;
+        max-width: 30vw;
     }
-    .burger-menu ul li{
-        font-size: 5vw;
-    }
-
     .burger-menu-items{
         display:none;
         text-align: start;
+        justify-self: center;
         justify-items: space-around;
+        padding: 2%;
+        border-radius: 20px;
+        margin-top: 2%;
+        width: 60vw
+    }
+    .burger-menu-items a{
+        font-size: larger;
+        padding-left: -2%;
+    }
+    .burger-menu-items i{
+        margin-left: 5%;
+    }
+    .burger-menu-items li{
+        z-index: 2;
+        margin: 5%;
+        margin-bottom: 0;
+        padding-bottom: 5%;
+        border-bottom: 2px #0753c5c9 solid;
+    }
+    .burger-menu-items .lastli{
+        border-bottom: 0;
+        padding-bottom: 5%;
     }
     #bars{
         margin: auto;
@@ -97,7 +126,7 @@ header{
         color: white;
         font-size: 13vw;
         justify-items: center;
-        padding-top: 6%;
+        padding-top: 7%;
         border-radius: 7px;
         text-align: center;
         justify-items: center;
@@ -105,12 +134,6 @@ header{
     }
     header ul i{
         padding-left: 2px;
-    }
-    header p{
-        font-size: 12px;
-    }
-    header img{
-        width: 40vw;
     }
 }
 
