@@ -1,3 +1,10 @@
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body{
     background-color: #ebebeb;
 }
@@ -16,6 +23,7 @@ h3{
     font-size: 24px;
     text-align: center; 
     width: 100vw;
+    margin: 2vh 0 1vh 0;
 }
 
 main section{
@@ -38,26 +46,27 @@ main section{
     align-items: center;
 }
 
-#envio{
-    color: green;
+.icono-carrito{
+    color: #39b54a;
     border-radius: 50%;
     font-size: 16px;
-    padding: 5px;
+    padding: 5px 5px 5px 5px;
     width: 30px;
     height: 30px;
-    display: inline-block;
+    display: block;
     border: 1px solid #39b54a;
     background-color: #FFF;
-    position: relative;
-    right: -85%;
-    top: -35px;
+    position: absolute;
+    right: 30px;
+    top: -20px;
     text-align: center;
 }
-
 
 .price{
     font-size: 18px;
     padding: 1%;
+    text-align: center;
+    justify-content: center;
 }
 
 .discount{
@@ -65,12 +74,23 @@ main section{
     padding: 1%;
     color: green;
     font-weight: bolder;
+    width: 25vw;
+    height: 3vh;
+    text-align: end;
+    justify-content: center;
 }
 
 .detalle{
     border-top: 1px solid #ebebeb;
     padding: 15px;
+    position: relative;
 }
+
+.producto:hover .productTitle{
+    display: block;
+}
+
+
 @media (min-width:481px){
     .producto{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -79,25 +99,45 @@ main section{
         margin: 10px auto;
         height: fit-content;
     }
-    .productTitle{
-        visibility: visible;
+    .producto:hover .productTitle{
+        display: block;
     }
 }
 
 .productTitle{
+    display:flex;
+    box-sizing: border-box;
     color: #666;
-    visibility: hidden;
+    display: none;
+    margin: 4% 0 2% 0;
+    justify-content: start;
+    align-content: flex-start;
 }
 @media (min-width:961px){
-    .productTitle{
-        visibility: visible;
+    .producto:hover .productTitle{
+        display: block;
     }
     .producto{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        box-shadow: 0px 0px 0px rgb(100, 100, 100);
         width: 22.5%;
         box-sizing: border-box;
         margin: 10px auto;
         height: fit-content;
+    }
+    .discount{
+        font-size: 18px;
+        padding: 1%;
+        color: green;
+        font-weight: bolder;
+        width: 25vw;
+        height: 3vh;
+        text-align: end;
+    }
+    .producto:hover .icono-carrito {
+        transform: rotate(-90deg);
+    }
+    .producto:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
 }
@@ -124,12 +164,13 @@ footer{
     align-content: center;
     text-align: center;
     padding: 5%;
+    margin-top: -5%
 }
 
 .footermain{
     display:flex;
     flex-direction: column;
-    padding: 0 15% 0 15%;
+    padding: 0% 15% 0 15%;
 }
 
 footer i{
@@ -142,9 +183,9 @@ footer i{
 .copyright{
     align-self: flex-start;
     justify-self: end;
+    margin-top: 6%;
+    font-size: 13px;
 }
 
-#banner{
-    width: 100vw;
-}
+
 

@@ -8,21 +8,24 @@
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/header.css">
 </head>
 <body>
     <header>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="/css/header.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-        
         <div class="logoysearch">
             <img class="logo" src='./images/logo-mercado-liebre.svg' alt='logo'>
-            <section class="browse-bar"><input type="text" placeholder="Buscar productos, marcas"></section>
-        </div>
+            <div class="browse-bar">
+                <section class="browse"><input type="text" placeholder="Buscar productos, marcas"></section>
+                <i class="fas fa-search"></i>
+            </div>
+            </div>
 
         <p class="cuotastarjeta"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
 
+        <section class="secciones">
         <ul>
             <li><a href='#'>Ofertas</a></li>
             <li><a href='#'>Tiendas Oficiales</a></li>
@@ -31,13 +34,28 @@
         </ul>
 
         <ul>
-            <li><a href='#'>Creá tu cuenta<i class="far fa-id-card"></i></a></li>
+            <li><a href='#'>Creá tu cuenta<i class="far fa-id-card" href="/register"></i></a></li>
             <li><a href='#'>Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
             <li><a href='#'>Mis compras<i class="fas fa-shopping-basket"></i></a></li>
         </ul>
+        </section>
 
         <div class="burger-menu">
             <i id="bars" class="fas fa-bars"></i>
+            <div class=burger-menu-items>
+                <ul>
+                    <li><a href='#'>Ofertas</a></li>
+                    <li><a href='#'>Tiendas Oficiales</a></li>
+                    <li><a href='#'>Vender</a></li>
+                    <li><a href='#'>Ayuda</a></li>
+                </ul>
+        
+                <ul>
+                    <li><a href='#'>Creá tu cuenta<i class="far fa-id-card" href="/register"></i></a></li>
+                    <li><a href='#'>Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href='#'>Mis compras<i class="fas fa-shopping-basket"></i></a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -49,7 +67,7 @@
             <div class="producto">
                 <img src='./images/img-cafetera-moulinex.jpg' alt='imagen cafetera'>
                 <div class="detalle"> 
-                    <i id="envio" class="fas fa-shipping-fast icono-carrito"></i>
+                    <i class="fas fa-shipping-fast icono-carrito"></i>
                     <section class="pricediscount">
                         <p class="price">$6.770</p>
                         <p class="discount">40% off</p>
@@ -122,7 +140,7 @@
                 <div class="detalle">
                     <i id="envio" class="fas fa-shipping-fast icono-carrito"></i>
                     <section class="pricediscount">
-                        <p class="price">$70.500/p>
+                        <p class="price">$70.500</p>
                         <p class="discount">10% off</p>
                     </section>
                     <b class="productTitle"><p>Samsung Galaxy S10</p></b>
