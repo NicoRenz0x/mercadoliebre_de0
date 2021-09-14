@@ -14,7 +14,7 @@ main {
     display: flex;
     width: 100vw;
     box-sizing: border-box;
-    padding: 5% 10% 10git% 10%;
+    padding: 5% 10% 10% 10%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
