@@ -1,25 +1,16 @@
 const express = require("express");
+const router = express.Router();
 const path = require("path");
 const app = express();
 const publicPath = path.resolve(__dirname, "./public");
 app.use(express.static(publicPath));
+const rutasMain = require('./routes/main.js')
+
 
 app.listen(3000, () => {
     console.log("Servidor iniciado en http://localhost:3000/")
 });
 
-app.listen(process.env.PORT || 3030,function(){
-    console.log("Servidor iniciado en http://localhost:3000/")
-});
-
-app.get('', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/home.html'))
-});
-
-app.get('/register.html', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/register.html'))
-});
-
-app.get('/login.html', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/login.html'))
-});
+app.use('/', rutasMain);
+app.use('/register', rutasMain);
+app.use('/login', rutasMain);
