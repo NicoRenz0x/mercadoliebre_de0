@@ -84,7 +84,8 @@ header li::marker{
     .burger-menu:hover .burger-menu-items{
         display: block;
         z-index: 2;
-        background-color:#1259c37e
+        position: absolute;
+        background-color:hsla(0, 0%, 100%, 0.671)
     }
     .burger-menu:hover #bars{
         padding-bottom: 30%;
@@ -103,24 +104,33 @@ header li::marker{
         text-align: start;
         justify-self: center;
         justify-items: space-around;
+        align-self: center;
         padding: 2%;
         border-radius: 20px;
-        margin-top: 2%;
+        margin-top: 16%;
         width: 60vw
     }
     .burger-menu-items a{
         font-size: larger;
         padding-left: -2%;
+        width: auto;
+        height: 4vh;
+        align-self: center;
+        color: black;  
+        justify-content: space-around;
+        font-weight: bolder;
+        text-decoration-color: hsla(0, 0%, 100%, 0.671)
     }
     .burger-menu-items i{
         margin-left: 5%;
     }
     .burger-menu-items li{
+        display: flex;
         z-index: 2;
         margin: 5%;
         margin-bottom: 0;
         padding-bottom: 5%;
-        border-bottom: 2px #0753c5c9 solid;
+        border-bottom: 1px #0753c5c9 solid;
     }
     .burger-menu-items .lastli{
         border-bottom: 0;
