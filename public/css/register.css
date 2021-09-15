@@ -70,6 +70,7 @@ main {
     margin-top: 2%;
 }
 .boton {
+    display: flex;
     margin-top: 2%;
     background-color: #1259c3;
     color: rgb(255, 255, 255);
@@ -80,6 +81,7 @@ main {
     box-sizing: border-box;
     align-self: center;
 }
+
 .borrar{
     background-color: #fff;
     color: black;

@@ -155,14 +155,16 @@ header li::marker{
         flex-direction: row;
         justify-content: space-between;
         width: auto;
-        padding: 1vh 5vw 1vh 5vw;
+        margin: 2.5vh 2vw 1.5vh 2vw;
         order: 2;
+        max-width: 100vw;
     }
     .seccion1{
         order:2
     }
     .seccion2{
         order: 2;
+        margin-right: 4.5%;
     }
     ul{
         display: flex;
@@ -171,14 +173,20 @@ header li::marker{
     ul li{
         display: flex;
         flex-direction: row;
+        padding: 1%;
+        padding-left: 2%;
         padding-right: 2%;
-        padding-left: 0%;
+        border-radius: 5px;
         margin: auto;
         box-sizing: border-box;
-        width: max-content;
+        width: fit-content;
     }
     li a{
         width: max-content;
+        font-weight: bolder;
+    }
+    ul li a i{
+        padding-left: 1%;
     }
 
 
@@ -200,12 +208,15 @@ header li::marker{
     }
     .logo{
         visibility: visible;
-        width: 10vw;
+        width: 13vw;
         justify-self: flex-start;
     }
     .cuotastarjeta{
         order:2;
         align-self: flex-end;
+        margin-right: 1.8%;
+        margin-top: -2.8%;
+        font-size: 14px;
     }
     .browse-bar{
         display:flex;
@@ -216,10 +227,14 @@ header li::marker{
         align-self: center;
         align-items: center;
         padding: 1.5%;
+        margin-left: 2%;
         border-radius: 20px;
         justify-items: center;
         justify-content: space-between;
         background-color: #fff;
+    }
+    .browse input{
+        border: none;
     }
 }
 @media (min-width:961px){
