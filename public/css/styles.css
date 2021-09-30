@@ -19,7 +19,7 @@ main {
     align-items: center;
 }
 
-h3{
+.homeMain h3{
     font-size: 24px;
     text-align: center; 
     width: 100vw;

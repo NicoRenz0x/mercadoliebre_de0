@@ -136,6 +136,9 @@ header li::marker{
         border-bottom: 0;
         padding-bottom: 5%;
     }
+    .burger-menu-items ul a{
+        width: 60vw;
+    }
     #bars{
         margin: auto;
         display: inline-block;

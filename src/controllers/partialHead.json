@@ -1,0 +1,18 @@
+{
+    "home": {
+        "title": "Mercado Liebre",
+        "style": "styles.css"
+    },
+    "login": {
+        "title": "Login",
+        "style": "../css/login.css"
+    },
+    "register": {
+        "title": "Register",
+        "style": "../css/register.css"
+    },
+    "productDetail": {
+        "title": "Product Detail",
+        "style": "../css/productDetail.css"
+    }
+}
