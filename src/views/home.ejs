@@ -8,99 +8,38 @@
     <main class="homeMain">
         <section class='last-visited'>
             <b><h3>Basado en tu última visita</h3></b>
-            <div class="producto">
-                <img src='./images/img-cafetera-moulinex.jpg' alt='imagen cafetera'>
-                <div class="detalle"> 
-                    <i class="fas fa-shipping-fast icono-carrito"></i>
-                    <section class="pricediscount">
-                        <p class="price">$6.770</p>
-                        <p class="discount">40% off</p>
-                    </section>
-                    <b class="productTitle"><p>Cafetera Moulinex</p></b>
-                 </div> 
-            </div>
-            <div  class="producto">
-                <img src='./images/img-macbook-pro-2019.jpg' alt='imagen macbook'>
-                <div class="detalle">
-                    <i id="envio" class="fas fa-shipping-fast icono-carrito"></i>          
-                    <section class="pricediscount">
-                        <p class="price">$230.000</p>
-                        <p class="discount">20% off</p>
-                    </section>
-                    <b class="productTitle"><p>MacBook Pro 2019</p></b>
+            <% productos.forEach(producto => { %>
+                <div class="producto">
+                    <img src='./images/<%= producto.img %>' alt='imagen <%= producto.title %>' >
+                        
+                    <div class="detalle"> 
+                        <i id="envio" class="fas fa-shipping-fast icono-carrito"></i>
+                        <section class="pricediscount">
+                            <p class="price"><%= producto.precio %></p>
+                            <p class="discount"><%= producto.discount %></p>
+                        </section>
+                        <a href="./products/detail/<%= producto.id %>"><b class="productTitle" ><p><%= producto.title %></p></b></a>
+                    </div>
                 </div>
-            </div>
-            <div class="producto">
-                <img src='./images/img-samsung-galaxy-s10.jpg' alt='imagen samsung galaxy'>
-                <div class="detalle">
-                    <i id="envio" class="fas fa-shipping-fast icono-carrito"></i>
-                    <section class="pricediscount">
-                        <p class="price">$70.500</p>
-                        <p class="discount">10% off</p>
-                    </section>
-                    <b class="productTitle"><p>Samsung Galaxy S10</p></b>
-                </div>           
-            </div>
-            <div class="producto">
-                <img src='./images/img-tv-samsung-smart.jpg' alt='imagen smarttv'>
-                <div class="detalle">
-                    <i id="envio" class="fas fa-shipping-fast icono-carrito"></i>
-                    <section class="pricediscount">
-                        <p class="price">$23.200</p>
-                        <p class="discount">5% off</p>
-                    </section>
-                    <b class="productTitle"><p>SmartTv Samsung 43"</p></b>
-                </div>                
-            </div>
+                <% }) %>
         </section>
 
         <section class='offers'>
             <b><h3>Ofertas</h3></b>
+            <% productos.forEach(producto => { %>
             <div class="producto">
-                <img src='./images/img-cafetera-moulinex.jpg' alt='imagen cafetera'>
+                <img src='./images/<%= producto.img %>' alt='imagen <%= producto.title %>' >
                     
                 <div class="detalle"> 
                     <i id="envio" class="fas fa-shipping-fast icono-carrito"></i>
                     <section class="pricediscount">
-                        <p class="price">$6.770</p>
-                        <p class="discount">40% off</p>
+                        <p class="price"><%= producto.precio %></p>
+                        <p class="discount"><%= producto.discount %></p>
                     </section>
-                    <b class="productTitle"><p>Cafetera Moulinex</p></b>
+                    <a href="./products/detail/<%= producto.id %>"><b class="productTitle" ><p><%= producto.title %></p></b></a>
                 </div>
             </div>
-            <div class="producto">
-                <img src='./images/img-macbook-pro-2019.jpg' alt='imagen macbook'>
-                <div class="detalle">
-                    <i id="envio" class="fas fa-shipping-fast icono-carrito"></i>
-                    <section class="pricediscount">
-                        <p class="price">$230.000</p>
-                        <p class="discount">20% off</p>
-                    </section>
-                    <b class="productTitle"><p>MacBook Pro 2019</p></b>
-                </div>
-            </div>
-            <div class="producto">
-                <img src='./images/img-samsung-galaxy-s10.jpg' alt='imagen samsung galaxy'>
-                <div class="detalle">
-                    <i id="envio" class="fas fa-shipping-fast icono-carrito"></i>
-                    <section class="pricediscount">
-                        <p class="price">$70.500</p>
-                        <p class="discount">10% off</p>
-                    </section>
-                    <b class="productTitle"><p>Samsung Galaxy S10</p></b>
-                </div>           
-            </div>
-            <div class="producto">
-                <img src='./images/img-tv-samsung-smart.jpg' alt='imagen smartv'>
-                <div class="detalle">
-                    <i id="envio" class="fas fa-shipping-fast icono-carrito"></i>
-                    <section class="pricediscount">
-                        <p class="price">$23.200</p>
-                        <p class="discount">5% off</p>
-                    </section>
-                    <b class="productTitle"><p>SmartTv Samsung 43"</p></b>
-                </div>                
-            </div>
+            <% }) %>
         </section>
 
     </main>

@@ -1,5 +1,5 @@
 let express = require('express'); // Solicitud de Express
-let router = express.Router(); //Módulo Router de Express
+const router = express.Router(); //Módulo Router de Express
 
 /* *****Controlador de usuario***** */
 let userController = require('../controllers/userController.js');

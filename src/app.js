@@ -5,6 +5,7 @@ const publicPath = path.resolve(__dirname, "../public");
 app.use(express.static(publicPath));
 const rutasMain = require('./routes/main.js')
 const userRoutes = require('./routes/user.js')
+const productsRoutes = require('./routes/products.js')
 
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
@@ -15,4 +16,5 @@ app.listen(3000, () => {
 
 app.use('/', rutasMain);
 app.use('/user', userRoutes);
+app.use('/products', productsRoutes);
 
