@@ -14,5 +14,13 @@
     "productDetail": {
         "title": "Product Detail",
         "style": "../css/productDetail.css"
+    },
+    "productEdition":{
+        "title": "Product Edition",
+        "style": "../css/productCrud.css"
+    },
+    "productCreation":{
+        "title": "Product Creation",
+        "style": "../css/productCrud.css"
     }
 }
