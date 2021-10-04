@@ -4,16 +4,16 @@
 <body>
   <%- include('../partials/header.ejs') %>
 <main>
-  <h2>Edición de producto <%= id %> </h2>
+  <h2>Edición de producto <%= producto.id %> </h2>
   <div class="productCrudForm">
     <form method="POST" action="/products/edition?_method=PUT">
       <div class= "campo">
         <label for="name">Nombre de producto</label> <br>
-        <input class="input" name="name" id="name" type="text">
+        <input class="input" name="name" id="name" type="text" value="<%= producto.title %>">
       </div>
       <div class= "campo">
         <label for="description">Descripción</label> <br>
-        <input class="input" name="description" id="description" type="text">
+        <input class="input" name="description" id="description" type="text" value="<%= producto.description %>">
       </div>
       <div class= "campo">
         <label for="image">Imagen</label> <br>     
@@ -29,7 +29,7 @@
       </div>
       <div class= "campo">
         <label for="price">Precio</label> <br>
-        <input class="input" name="price" id="price" type="text" placeholder="$">
+        <input class="input" name="price" id="price" type="text" placeholder="$" value="<%= producto.precio %>">
       </div>
       <div class="buttons">
         <input class="button" value="GUARDAR CAMBIOS" type="submit">

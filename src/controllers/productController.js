@@ -16,12 +16,17 @@ const productController = {
         res.render("./products/creation", { partialHead: partialHead.productCreation });
     },
     create: function (req, res) { //Creación de producto
-        res.send(req.body); //Por el momento solo cheuqeamos lo que se guarda con el form
-        res.redirect('/');
+        let producto = JSON.stringify({
+            id: (JSON.parse(fs.readFileSync('src/data/products.json', 'utf-8'))).length + 1,
+            title: req.body.name,
+            precio: req.body.price,
+        })
+        fs.appendFileSync('src/data/products.json', 'utf-8')
+        res.redirect('./');
     },
     edition: function (req, res) { //Página de edición de producto
-        let id = req.params.productId;
-        res.render("./products/edition", { partialHead: partialHead.productEdition , id : id});
+        let producto = productos.find(producto => producto.id == req.params.productId);
+        res.render("./products/edition", { partialHead: partialHead.productEdition , producto: producto});
     },
     edit: function (req, res) { //Edición de producto
         res.send(req.body);
