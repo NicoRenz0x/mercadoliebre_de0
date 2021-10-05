@@ -16,13 +16,14 @@ const productController = {
         res.render("./products/creation", { partialHead: partialHead.productCreation });
     },
     create: function (req, res) { //Creación de producto
-        let producto = JSON.stringify({
-            id: (JSON.parse(fs.readFileSync('src/data/products.json', 'utf-8'))).length + 1,
+        let producto = {
+            id: productos.length + 1,
             title: req.body.name,
             precio: req.body.price,
             img: req.body.img
-        });
-        fs.writeFileSync('src/data/products.json', (JSON.stringify(productos + producto)))
+        };
+        productos.push(producto)
+        fs.writeFileSync('src/data/products.json', (JSON.stringify(productos)))
         res.redirect('../');
     },
     edition: function (req, res) { //Página de edición de producto
