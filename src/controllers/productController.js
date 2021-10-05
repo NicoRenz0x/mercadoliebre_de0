@@ -20,9 +20,10 @@ const productController = {
             id: (JSON.parse(fs.readFileSync('src/data/products.json', 'utf-8'))).length + 1,
             title: req.body.name,
             precio: req.body.price,
-        })
-        fs.appendFileSync('src/data/products.json', 'utf-8')
-        res.redirect('./');
+            img: req.body.img
+        });
+        fs.writeFileSync('src/data/products.json', (JSON.stringify(productos + producto)))
+        res.redirect('../');
     },
     edition: function (req, res) { //Página de edición de producto
         let producto = productos.find(producto => producto.id == req.params.productId);

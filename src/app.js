@@ -5,6 +5,9 @@ const publicPath = path.resolve(__dirname, "../public");
 app.use(express.static(publicPath));
 const methodOverride = require('method-override');
 app.use(methodOverride('_method'));
+app.use(express.urlencoded({ extended: false}));
+app.use(express.json())
+
 const rutasMain = require('./routes/main.js');
 const userRoutes = require('./routes/user.js');
 const productsRoutes = require('./routes/products.js');
